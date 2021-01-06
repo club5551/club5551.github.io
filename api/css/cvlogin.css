@@ -1,0 +1,99 @@
+
+#cv-login-panel-sub{
+    background: #EEE;
+}
+#cv-login-main{
+    background: white;
+}
+#cv-login-appdeclarecol{
+    border-bottom: 1px solid #DDD;
+    padding: 15px;
+}
+#cv-login-applogo{
+    max-height: 80px;
+    max-width: 150px;
+}
+#cv-login-logincol{
+    margin:10px 0;
+}
+#cv-login-cvecologin-section,#cv-login-loginoption-section{
+    padding:0;
+}
+#cv-login-cvecologin-logo{
+    width: 150px;
+    margin: auto;
+}
+#cv-login-cvecologin-logo > img{
+    width: 100%;
+    margin: 10px 0;
+}
+#cv-login-cvecologin-form{
+    margin: 0 0 30px 0;
+}
+#cv-login-cvecologin-form > .form-row{
+    margin: 10px 0;
+}
+#cv-login-cvecologin-form-loginrow{
+    display: flex;
+    align-items: baseline;
+}
+#cv-login-cvecologinbutton{
+    width: 100%;
+}
+#cv-login-cvecologin-form-util{
+    margin-top: 10px;
+}
+#cv-login-cvecologin-form-util > a{
+    margin-right: 10px;
+}
+#cv-login-loginoption-list{
+    padding: 0;
+}
+#cv-login-loginoption-list > li{
+    display:block;
+}
+.btn.cv-login-loginbutton{
+    height: 40px;
+    background: white;
+    border-color:#DDD;
+    padding: 6px 15px;
+}
+.btn.cv-login-loginbutton:hover{
+    border-color: #80bdff;
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,0.25);
+}
+.cv-login-loginbutton > img{
+    height:100%;
+}
+@media all and (min-width: 768px) {
+    #cv-login-main{
+        margin:auto;
+        /*margin-top: 100px;*/
+        padding: 30px;
+        
+    }
+    #cv-login-appdeclarecol{
+        margin:0px;
+        border:none;
+        padding: 0 15px 0 15px;
+    }
+    #cv-login-logincol{
+        margin: 0;
+        border-left: 1px dotted #80bdff;    
+    }
+    #cv-login-cvecologin-section,#cv-login-loginoption-section{
+        padding:0 20px;
+    }
+    #cv-login-cvecologin-logo{
+        margin: 0;
+    }
+    #cv-login-cvecologin-form-loginrow > *{
+        margin-right:10px;
+    }
+    #cv-login-cvecologinbutton{
+        width: auto;
+    }
+    .btn.cv-login-loginbutton{
+        width: auto;
+    }
+}

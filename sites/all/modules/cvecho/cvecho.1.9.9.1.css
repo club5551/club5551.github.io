@@ -1,0 +1,63 @@
+body.cvecho{
+	font-size: 12px;
+	font-family: "Comic Sans MS", sans-serif;
+}
+body.cvecho.cvecho-theatre{
+	background: #CCC;
+}
+#cvecho-theatre-header{
+	padding:10px;
+	min-height: 60px;
+	background: white;
+	margin-bottom:10px;
+}
+#cvecho-theatre-header a[data-part="logo"]{
+	border:0px;
+	float:left;
+}
+#cvecho-theatre-header span[data-part="course-info"]{
+
+}
+#cvecho-theatre-header img[data-part="courseicon"]{
+	float: left;
+	margin:0 10px;
+	width: 40px;
+	height: 40px;
+}
+.jp-video{
+	border-radius: 8px;
+	overflow: hidden;
+	box-shadow: 0 0 3px 0 rgba(0,0,0,0.3);
+}
+.jp-video video{
+	border-radius: 8px 8px 0 0;
+    background: black;
+}
+.cvecho-item-m4v{
+	margin:5px 0px 5px 0px;
+	padding:10px;
+	border-radius: 8px;
+	min-height: 40px;
+}
+.cvecho-floating-play-button{
+	float:left;
+	width:40px;
+}
+.cvecho-floating-play-button img{
+	height:40px;
+	width:40px;
+}
+.cvecho-floating-play-button ~ div{
+	margin-left:45px;
+}
+.cvecho-floating-viewinglog-button{
+	float:right;
+	margin-left:10px;
+}
+.cvecho-item-title{
+	font-weight: bold;
+}
+.cvecho-item-pubdate{
+	font-size: 0.8em;
+	color:#999999;
+}

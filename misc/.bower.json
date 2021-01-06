@@ -1,0 +1,15 @@
+{
+  "name": "jquery-1.2.6.min",
+  "_cacheHeaders": {
+    "ETag": "W/\"54499a47-d9de\"",
+    "Last-Modified": "Fri, 24 Oct 2014 00:16:07 GMT",
+    "Content-Length": "16710",
+    "Content-Type": "application/javascript; charset=utf-8"
+  },
+  "_release": "e-tag:W/\"54499a4",
+  "main": "index.js",
+  "_source": "https://code.jquery.com/jquery-1.2.6.min.js",
+  "_target": "*",
+  "_originalSource": "https://code.jquery.com/jquery-1.2.6.min.js",
+  "_direct": true
+}

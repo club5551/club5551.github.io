@@ -1,0 +1,474 @@
+/*----- CV Responsive Marker ---*/
+.courseville-responsive-small{
+    display:none !important;
+}
+/*END: ----- CV Responsive Marker ---*/
+
+/*----- CV Main (Home) Layout -----*/
+#courseville-body{
+    padding:20px 0;
+}
+#courseville-content-wrap{
+    min-width:730px;
+    max-width:1200px;
+    margin:auto;
+}
+#courseville-logo{
+    float:left;
+    margin-right:20px;
+}
+#courseville-logo > img{
+    width: 250px;
+    height: 50px;
+    margin-left: 10px;
+}
+#courseville-logo-sider{
+    padding:5px;
+    margin-left:275px;
+    margin-right:10px;
+}
+#courseville-logo-sider .courseville-fbpict-wrapper > img{
+    width:44px;
+    height:44px;
+}
+#courseville-logo-sider-edit-button-wrapper{
+    position:absolute;
+    right:0;
+    top:0;
+}
+#courseville-panel-mid{
+    min-height: 350px;
+    margin: -8px 5px 10px 5px;
+    border: 1px solid #AAA;
+    border-radius: 8px;
+    box-shadow: 0 1px 2px 2px rgba(0,0,0,0.2);
+}
+#courseville-panel-mid-inner{
+    padding:10px;
+    padding-bottom:36px;
+}
+#courseville-courselist-home{
+    margin-right: 10px;
+    margin-left: 10px;
+}
+#courseville-panel-bottom{
+    width:730px;
+    min-height:10px;
+    clear:both;
+}
+#courseville-content-course-footer{
+    clear:both;
+}
+.courseville-courselist-group{
+    clear:both;
+}
+/*END:----- CV Main (Home) Layout -----*/
+
+#courseville-live-message{
+    position:absolute;
+    padding:2px 2px 2px 2px;
+    border:1px solid #AAAAAA;
+    display:none;
+    z-index:15;
+}
+/*----- CV Floating Pane -----*/
+#courseville-floating-pane{
+    position:fixed;
+    top:100px;
+    left:100px;
+    padding:10px;
+    border-width:1px;
+    border-style:solid;
+    display:none;
+    z-index:10;
+}
+/*END: ----- CV Floating Pane -----*/
+
+/*----- CV Discussion Page -----*/
+.courseville-reply-console textarea{
+    width:470px;
+    height:50px;
+}
+/*END: ---- CV Discussion Page -----*/
+
+/*----- CV OCV -----*/
+#courseville-ocv-indicator{
+    padding:5px;
+    border-width:1px;
+    margin-bottom:10px;
+}
+/*END: ----- CV OCV -----*/
+
+/*----- CV Group Edit -----*/
+#courseville-group-edit-members{
+    float:left;
+}
+#courseville-group-edit-member-waiting-div{
+    margin-left:220px;
+    border:1px solid #DDDDDD;
+    padding:5px;
+    max-height:150px;
+    overflow:auto;
+}
+#courseville-group-edit-member-autosuggest{
+    width:auto;
+    margin:0;
+    margin-bottom:5px;
+}
+.courseville-group-edit-member-item{
+    padding:5px;
+    border:1px solid #DDDDDD;
+    min-height:20px;
+    width:200px;
+    margin-bottom:5px;
+    background:#FFFFFF;
+    cursor:pointer;
+    position:relative;
+}
+.courseville-group-edit-member-item:hover{
+    background:#ffc279;
+}
+.courseville-group-edit-member-item-remove-button{
+    position:absolute;
+    right:5px;
+    top:5px;
+}
+.courseville-group-edit-member-item-portrait{
+    float:left;
+    width:20px;
+    height:20px;
+}
+.courseville-group-edit-member-item-name{
+    margin-left:25px;
+}
+
+#courseville-delete-group-panel-wrapper{
+    text-align: right;
+}
+
+#courseville-delete-group-unfold{
+    cursor:pointer;
+    text-decoration: underline;
+    color:#AAAAAA;
+}
+#courseville-group-cover-img{
+    width:370px;
+    height:140px;
+}
+/*END: ----- CV Group Edit -----*/
+
+/*----- CV Login -----*/
+#courseville-body-login{
+    background-color:#018ADA;
+    width:100%;
+    text-align:center;
+    position:absolute;
+    top:0;
+    bottom:0;
+    font-family:"Comic Sans MS";
+}
+
+#courseville-login-page-inner{
+    margin:auto;
+    margin-top:5%;
+    width:280px;
+}
+#courseville-login-form{
+    width: 280px;
+    margin: auto;
+}
+#courseville-login-button-wrapper{
+    width:180px;
+    padding:50px;
+    border-radius: 30px;
+    margin:auto;
+    margin-top:30px;
+    margin-bottom:50px;
+}
+.courseville-login-button{
+    width:157px;
+    height:35px;
+}
+#courseville-login-footer #courseville-footer-content{
+    color:white;
+}
+/*END:----- CV Login -----*/
+
+/*----- CV Submission subpage -----*/
+/*END:----- CV Submission subpage -----*/
+#courseville-admin-manage-folder-form-wrapper{
+    text-align:right;
+}
+
+#courseville-admin-clone-current-item{
+    max-height:200px;
+    overflow: auto;
+}
+
+#courseville-admin-clone-past-item{
+    max-height:250px;
+    overflow: auto;
+}
+
+.courseville-clone-current-pane{
+    overflow: auto;
+}
+
+#courseville-register-div{
+    clear:both;
+    margin-top:20px;
+}
+#courseville-request-div{
+    text-align:right;
+    color:#888888;
+}
+.courseville-count-box{
+    background:#DDDDDD;
+    width:100px;
+    height:100px;
+    padding:10px;
+    text-align:center;
+    font-size:9px;
+}
+
+.courseville-count-number{
+    text-align:center;
+    font-size:36px;
+}
+
+.courseville-header{
+    font-size:16px;
+}
+.courseville-courseicon{
+    text-align:center;
+    width:80px;
+    font-size:10px;
+    color:#000000;
+    margin:5px;
+    display:inline-block;
+}
+.courseville-noti-icon{
+    width:24px;
+    height:24px;
+}
+.courseville-orange-header-bar{
+    color:#FFFFFF;
+    background:#ff9b00;
+    padding:2px;
+}
+#courseville-course-home-announcement{
+    max-height:200px;
+    overflow:auto;
+}
+#courseville-content-course-footer{
+    clear:both;
+}
+
+.courseville-post-date{
+    font-weight:bold;
+}
+
+.courseville-material-thumb{
+    border:0px;
+}
+
+.courseville-content-course-main-column-group{
+    margin-bottom:10px;
+}
+
+.courseville-content-course-main-column-group .courseville-leftbar{
+    float:left;
+    width:110px;
+}
+
+.courseville-content-course-main-column-group .courseville-with-leftbar{
+    margin-left:120px;
+}
+
+.courseville-content-course-main-column-group .courseville-multicol-footer{
+    clear:both;
+}
+
+.courseville-content-course-main-left-group{
+    clear:both;
+    margin-bottom:10px;
+}
+
+.courseville-submission-button{
+    cursor:pointer;
+}
+
+.courseville-list-submission-button{
+    cursor:pointer;
+}
+
+.courseville-form-description{
+    font-size:10px;
+    color:#c77b02;
+}
+
+.courseville-required:after{
+    content:"*";
+    color:red;
+}
+
+.courseville-form-item{
+    vertical-align:text-top;
+    margin-bottom:5px;
+    margin-top:5px;
+}
+
+.courseville-form-group{
+    vertical-align:text-top;
+    margin-bottom:5px;
+    margin-top:5px;
+    padding:5px;
+    border:1px solid #AAAAAA;
+}
+
+.courseville-icon-wrap{
+    display:inline-block;
+    width:80px;
+    margin:5px;
+    text-align:center;
+    vertical-align:top;
+}
+.courseville-icon-wrap img{
+    width:80px;
+    height:80px;
+}
+.courseville-icon-wrap.courseville-oneline-menu-item{
+    width:auto;
+    text-align:left;
+}
+.courseville-icon-wrap.courseville-oneline-menu-item > img{
+   width:40px;
+   height:40px;
+}
+.courseville-icon-wrap.courseville-oneline-menu-item > *{
+   vertical-align: middle;
+}
+
+#courseville-discussion-post-list{
+    max-height:450px;
+    overflow: auto;
+}
+
+.courseville-assignment-answer{
+    /*clear:both;*/
+    margin-top:5px;
+    margin-bottom:5px;
+    border-top:1px dotted #018ada;
+    border-bottom:1px dotted #018ada;
+    padding-top:5px;
+    padding-bottom:5px;
+}
+
+.courseville-answer-textarea{
+    clear:both;
+    width:100%;
+    min-height:200px;
+    margin-top:5px;
+    margin-bottom:5px;
+}
+
+#courseville-grading-comment-text{
+    height:100px;
+    width:95%;
+}
+
+.courseville-grade-assignment{
+    cursor:pointer;
+}
+
+.courseville-star{
+    margin:0px;
+    width:13px;
+    padding:0px;
+    cursor:pointer;
+}
+
+.courseville-span-star-panel{
+    display:inline-block;
+}
+
+.courseville-static-star{
+    margin:0px;
+    width:8px;
+    padding:0px;
+}
+
+.courseville-bubble-bubble-content-column-body .courseville-static-star{
+    margin:0px;
+    width:13px;
+    padding:0px;
+}
+
+.courseville-single-star-wrap{
+    width:26px;
+    height:26px;
+    display:inline-block;
+    position:relative;
+    margin-top:0px;
+    margin-bottom:0px;
+    vertical-align: top;
+}
+.courseville-single-star{
+    width:26px;
+    height:26px;
+    border:0px;
+}
+.courseville-single-star-sider{
+    width:26px;
+    height:26px;
+    display:inline-block;
+    position:relative;
+    margin-top:0px;
+    margin-bottom:0px;
+    vertical-align: top;
+}
+.courseville-single-star-value{
+    position:relative;
+    text-align: center;
+}
+.courseville-single-star-label{
+    position:absolute;
+    text-align: center;
+}
+
+.courseville-navigation-panel{
+}
+
+.courseville-navigation-portrait{
+    cursor:pointer;
+    width:22px;
+    height:22px;
+    margin:2px;
+    border:2px solid #FFFFFF;
+}
+
+.courseville-navigation-portrait-current{
+    width:22px;
+    height:22px;
+    margin:2px;
+    border:2px solid #018ada;
+}
+
+.courseville-upload-div{
+    margin-bottom:20px;
+    padding:5px;
+    border:1px solid #AAAAAA;
+}
+
+#courseville-wallpost-subpage-header{
+    width:290px;
+    background:url(pict/bg_wallpost_header.jpg) no-repeat;
+    padding-left:60px;
+    padding-right:100px;
+    padding-top:25px;
+    color:#EE9201;
+    height:95px;
+}
+/* CV Assessment Form */
+
+/* END:CV Assessment Form */

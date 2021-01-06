@@ -1,0 +1,157 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" lang="en" xml:lang="en">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>myCourseVille</title>
+  <link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/courseville/courseville_style.1.12.10.0.css" />
+  <link type="text/css" rel="stylesheet" media="(min-width:751px)" href="/sites/all/modules/courseville/courseville_layout_full.1.12.10.0.css" />
+  <link type="text/css" rel="stylesheet" media="(max-device-width:750px),(max-width:750px)" href="/sites/all/modules/courseville/courseville_layout_small.1.12.10.0.css" />
+  <link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/cvqs/cvqs-creator.1.12.7.1.css" />
+  <link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/cvecho/cvecho.1.9.9.1.css" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/cveval/cveval.1.2.css">
+<link rel="stylesheet" href="sites/all/modules/cvtag/cvtag.1.12.4.0.css">
+<link rel="shortcut icon" href="sites/all/modules/courseville/pict/favicon.ico"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#018ADA"/>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+            <script async src="https://www.googletagmanager.com/gtag/js?id=UA-9901218-5"></script>
+            <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag("js", new Date());
+            gtag("config","UA-9901218-5");
+            </script>
+<meta property="og:title" content="myCourseVille"/>
+<meta property="og:site_name" content="myCourseVille"/>
+<meta property="og:description" content="myCourseVille: The Social LMS"/>
+<meta property="fb:app_id" content="149257375225749"/>
+<meta property="og:image" content="sites/all/modules/courseville/files/ogimages/og_default.png"/>
+<meta property="og:image:width" content="573"/>
+<meta property="og:image:height" content="300"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="sites/all/modules/courseville/courseville_ui.1.12.9.0.css">
+  <script type="text/javascript" src="/misc/jquery.js?6"></script>
+<script type="text/javascript" src="/misc/drupal.js?6"></script>
+<script type="text/javascript" src="/sites/all/modules/cvicon/cvicon.js?6"></script>
+<script type="text/javascript" src="/sites/all/modules/ckeditor/ckeditor/ckeditor.js?6"></script>
+<script type="text/javascript" src="/sites/all/modules/cvsticker/cvsticker.js?6"></script>
+<script type="text/javascript" src="/sites/all/modules/thumbpick/thumbpick.js?6"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, { "basePath": "/" });
+//--><!]]>
+</script>
+</head>
+
+<body id="courseville-body">
+
+      <script>
+          function checkLoginState() {
+              FB.getLoginStatus(function(response) {
+              statusChangeCallback(response);
+              });
+          }
+          courseville_logInWithFacebook = function() {
+              FB.login(function(response) {
+                if (response.authResponse) {
+                  try{
+                    document.getElementById("courseville-login-spinner").getElementsByClassName("cvui-spinner-status")[0].innerHTML="Logging in";
+                    document.getElementById("courseville-login-spinner").style.visibility = "visible";
+                  }catch(err){};
+                  window.location.reload();
+                }else{
+                  alert("User cancelled login or did not fully authorize.");
+                }
+              });
+              return false;
+          };
+          window.fbAsyncInit = function() {
+          FB.init({
+              appId            : "149257375225749",
+              autoLogAppEvents : true,
+              xfbml            : true,
+              cookie           : true,
+              version          : "v3.1"
+          });
+          };  
+          (function(d, s, id){
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) {return;}
+            js = d.createElement(s); js.id = id;
+            js.src = "https://connect.facebook.net/en_US/sdk.js";
+            fjs.parentNode.insertBefore(js, fjs);
+          }(document, "script", "facebook-jssdk"));
+      </script><div style="font-size:12px;font-family:sans-serif">  <div style="max-width:700px;text-align:center;margin:auto;"></div>  <header style="text-align:center;margin-top:50px;"  aria-label="myCourseVille Logo" title="myCourseVille Logo" "><img src="img/cv-logo.png"  aria-label="The Social LMS" title="The Social LMS"  style="width:250px; height:50px; margin:0;"/></header>  <div style="font-size:1em;text-align:center;margin-top:40px;">Please login with either of the following choices.</div>  <div style="font-size:0.8em;text-align:center;margin-top:10px;">Unless linked, different options result in separate user accounts.</div>  <main style="text-align:center;margin-top:40px;"  aria-label="Login area" title="Login area" ">    <ul id="courseville-login-button-list">      <li><a id="courseville-login-w-fb-button" class="courseville-login-button" href="#" onClick="courseville_logInWithFacebook()"  aria-label="Log in with Facebook" title="Log in with Facebook" > Log in with Facebook</a></li>      <li><a id="courseville-login-w-platform-cu-button" class="courseville-login-button" href="/api/chulalogin.php"   aria-label="Log in Chula IT account" title="Log in Chula IT account" >Log in with <img src="img/account-link-logo-cu.svg"/> account</a></li>      <li><a id="courseville-login-w-platform-button" class="courseville-login-button" href="https://www.mycourseville.com/api/oauth/authorize?response_type=code&client_id=mycourseville.com&redirect_uri=https://www.mycourseville.com"   aria-label="Log in with myCourseVille platform account" title="Log in with myCourseVille platform account" >Log in with <img src="img/cv-logo.png"  aria-label="The Social LMS" title="The Social LMS"  style=""/> platform</a></li>      <li><a id="courseville-login-w-platform-google-button" class="courseville-login-button" href="https://www.mycourseville.com/api/oauth/authorize?response_type=code&client_id=mycourseville.com&redirect_uri=https://www.mycourseville.com&login_page=google"   aria-label="Sign in with Google" title="Sign in with Google" > <img src="img/google_g_logo.svg"/>Sign in with Google</a></li>    </ul>  </main>  <div id="courseville-login-spinner" style="text-align:center;margin-top:50px;visibility:hidden;"><span class="cvui-spinner  cvui-light-bg  " >
+  <span class="cvui-spinner-icon"></span>
+  <span class="cvui-spinner-status" aria-live="assertive"></span>
+</span>
+  </div></div><style>
+              #courseville-login-button-list{
+                padding:0;
+              }
+              #courseville-login-button-list > li{
+                display:block;  
+                margin:0;
+              }
+              .courseville-login-button{
+                display:flex;
+                justify-content:center;
+                align-items:center;
+                width: 250px;
+                height: 32px;
+                border-radius: 4px;
+                margin:10px auto;
+                text-decoration:none;
+                border: 1px solid #CCC;
+              }
+              #courseville-login-w-fb-button{
+                background: #018ADA;
+                color:white;
+              }
+              #courseville-login-w-fb-button > img{
+                
+              }
+              #courseville-login-w-platform-cu-button{
+                background: white;
+                color: #888;
+              }
+              #courseville-login-w-platform-cu-button:hover{
+                color: #de5c8e;
+                border-color: #de5c8e;
+              }
+              #courseville-login-w-platform-cu-button > img{
+                width: 30px;
+                margin-left: 5px;
+                margin-right: 5px;
+              }
+              #courseville-login-w-platform-button{
+                background: white;
+                color: #888;
+              }
+              #courseville-login-w-platform-button:hover{
+                color: #FFA200;
+                border-color: #FFA200;
+              }
+              #courseville-login-w-platform-button > img{
+                width: 80px;
+                margin-top: -5px;
+                margin-left: 5px;
+                margin-right: 5px;
+              }
+              #courseville-login-w-platform-google-button{
+                background: white;
+                color: #888;
+              }
+              #courseville-login-w-platform-google-button:hover{
+                color: #ea4335;
+                border-color: #ea4335;
+              }
+              #courseville-login-w-platform-google-button > img{
+                width: 18px;
+                margin-right: 18px;
+              }
+              
+            </style></body>
+</html>

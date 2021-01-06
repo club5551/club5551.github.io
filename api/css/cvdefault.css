@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css?family=Sarabun&display=swap');
+.cv-default-pagebg{
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background: linear-gradient(180deg, rgba(255,255,255,0.8),transparent) #018ADA;;
+    z-index: -9999;
+}
+.cv-default-pagewrapper{
+    font-family: 'Sarabun', sans-serif;
+    font-size: 14px;
+    color: #888;
+    padding: 5px;
+}
+.cv-default-pagewrapper a{
+    color: #018ADA;
+    text-decoration: none;
+}
+.cv-default-pagewrapper a:hover{
+    color: #FFA200;
+    text-decoration: underline;
+}
+.cv-default-pagewrapper a:focus{
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,0.25);
+    outline: 0;
+}
+.cv-default-pagewrapper .form-control{
+    font-size: 1em;
+}
+.cv-default-pagewrapper .form-control::placeholder {
+    color: #80bdff;
+}
+.cv-default-margin-v{
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+.cv-default-accented-text{
+    color: #FFA200;
+}
+.cv-default-instruction{
+    padding:10px;
+    background: #EEE;
+    border-radius: 4px;
+}
+.cv-default-message{
+    padding:10px;
+    background: #EEE;
+    border-radius: 4px;
+}
+.cv-default-topmargin-80{
+    padding:0px;
+    margin-top: 80px;
+}
+.cv-default-topmargin-100{
+    padding:0px;
+}
+@media all and (min-width: 768px) {
+    .cv-default-topmargin-100{
+        margin-top: 100px;
+    }
+}
+.cv-default-fontsize{
+    font-size: 1em;
+}
+.cv-default-fontsize-80{
+    font-size: 0.8em;
+}
+.cv-default-fontsize-120{
+    font-size: 1.2em;
+}
+.cv-default-bs.btn{
+    font-size: 1em;
+    width: 100%;
+    cursor: pointer;
+}
+.cv-default-bs.btn.btn-primary{
+    color:white;
+    background-color: #018ADA;
+    border-color: #018ADA;
+}
+.cv-default-bs.btn.btn-primary:hover{
+    color:white;
+    background-color: #FFA200;
+    border-color: #FFA200;
+}
+.cv-default-bs.table{
+    color: inherit;
+    border-bottom:1px solid #DDD;
+}
+.cv-default-bs.table > thead{
+    background: rgba(0,0,0,0.05);
+}
+.cv-default-bs.table th{
+    font-weight: normal;
+    color: inherit;
+}
+.cv-default-shadow-card{
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+@media all and (min-width: 768px) {
+    .cv-default-bs.btn{
+        width: auto;
+    }
+}    
