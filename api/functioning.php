@@ -2,8 +2,8 @@
 include 'simple_html_dom.php';
 
 
-if (isset($_POST['Gobtn'])) {
-    require 'data.php';
+if (isset($_POST['username'])) {  #Gobtn -> username
+    require 'data.php'; #Database's information
 
     $username = $_POST['username'];
     $password = $_POST['password'];
