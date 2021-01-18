@@ -14,7 +14,7 @@ if (isset($_POST['username'])) {  #Gobtn -> username
 
     }
     else {
-        $sql = "SELECT username FROM accounts WHERE username=?";
+        $sql = "SELECT username FROM accounts WHERE username=?"; # ? links to "s" in mysqli_stmt_bind_param($statement,"s",$username); 
         $statement = mysqli_stmt_init($conn);
 
         if (!mysqli_stmt_prepare($statement,$sql)) {
@@ -24,7 +24,7 @@ if (isset($_POST['username'])) {  #Gobtn -> username
 
     
     else{
-        mysqli_stmt_bind_param($statement,"s",$username);
+        mysqli_stmt_bind_param($statement,"s",$username); 
         mysqli_stmt_execute($statement);
         mysqli_stmt_store_result($statement);
         $resultCheck = mysqli_stmt_num_rows($statement);
@@ -33,7 +33,7 @@ if (isset($_POST['username'])) {  #Gobtn -> username
             exit();
         }
         else{
-            $sql = "INSERT INTO accounts (username,password) VALUES (?,?)";
+            $sql = "INSERT INTO accounts (username,password) VALUES (?,?)"; # ?,? links to "ss" in mysqli_stmt_bind_param($statement,"ss",$username,$password);
             $statement = mysqli_stmt_init($conn);
             if (!mysqli_stmt_prepare($statement,$sql)) {
                 header("Location: chulalogin.php?4");
